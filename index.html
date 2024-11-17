@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Task Note Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="checklist.png" />
+    <!-- font link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;
+700;800&family-Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&
+family-Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Daily Task Note Manager</h1>
+      <form id="taskForm">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Enter a new task"
+          required
+        />
+        <input
+          type="text"
+          id="purposeInput"
+          placeholder="Enter purpose"
+          required
+        />
+        <input type="date" placeholder="Enter date" id="dayInput" required />
+        <input type="time" placeholder="Enter Time" id="timeInput" required />
+        <textarea id="noteInput" placeholder="Enter note"></textarea>
+        <button type="submit">Add Task</button>
+      </form>
+      <h2>Today's Tasks</h2>
+      <ul id="todayTaskList"></ul>
+      <h2>Past Tasks</h2>
+      <ul id="pastTaskList"></ul>
+      <h2>Future Tasks</h2>
+      <ul id="futureTaskList"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
